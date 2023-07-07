@@ -28,10 +28,25 @@
 
 
   <script src="./ace-builds/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./ace-builds/src-noconflict/ext-settings_menu.js" type="text/javascript" charset="utf-8"></script>
   <script>
     var editor = ace.edit("editor");
+
+  ace.require('ace/ext/settings_menu').init(editor);
+
     editor.setTheme("ace/theme/tomorrow_night_bright");
     editor.session.setMode("ace/mode/clojure");
+
+  editor.setOptions({
+    fontFamily: "Fira Code Light"
+  });
+
+  editor.commands.addCommands([{
+    name: "showSettingsMenu",
+    bindKey: { win: "Ctrl-k", mac: "Ctrl-k" },
+    exec: function (editor) { editor.showSettingsMenu(); }
+  }]);
+
   </script>
 </body>
 
