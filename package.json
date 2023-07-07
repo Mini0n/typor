@@ -1,0 +1,29 @@
+{
+  "name": "typpo",
+  "version": "0.1.0",
+  "description": "A simple Text editor powered by Ace",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mini0n/typor.git"
+  },
+  "keywords": [
+    "Ace",
+    "editor",
+    "text",
+    "editor"
+  ],
+  "author": "mini0n",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mini0n/typor/issues"
+  },
+  "homepage": "https://github.com/Mini0n/typor#readme",
+  "devDependencies": {
+    "electron": "^25.2.0",
+    "electron-builder": "^24.4.0"
+  }
+}
